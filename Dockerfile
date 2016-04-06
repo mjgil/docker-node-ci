@@ -4,7 +4,8 @@ RUN apt-get update && \
     apt-get install -y \
       xvfb \
       chromium \
-      python
+      python \
+      zip
 
 RUN wget https://bootstrap.pypa.io/get-pip.py -O - | python
 

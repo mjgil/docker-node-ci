@@ -1,7 +1,11 @@
 FROM node:4.4.0
 
 RUN apt-get update && \
-    apt-get install -y xvfb chromium python3.4
+    apt-get install -y \
+      xvfb \
+      chromium \
+      python3.4 \
+      python3-pip
 
 ADD xvfb-chromium /usr/bin/xvfb-chromium
 

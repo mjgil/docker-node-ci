@@ -4,8 +4,11 @@ RUN apt-get update && \
     apt-get install -y \
       xvfb \
       chromium \
-      python3.4 \
-      python3-pip
+      python \
+      curl
+      
+RUN curl http://python-distribute.org/distribute_setup.py | python
+RUN curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python
 
 ADD xvfb-chromium /usr/bin/xvfb-chromium
 

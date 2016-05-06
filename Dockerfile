@@ -21,3 +21,5 @@ RUN google-chrome --user-data-dir=/root/chrome-user-data-dir & \
 ENV CHROME_BIN /usr/bin/google-chrome
 
 RUN pip install awscli
+
+RUN npm install -g npm@3.9.0
